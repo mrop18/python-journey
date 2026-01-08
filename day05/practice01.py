@@ -81,3 +81,82 @@
 
 # [] correct
 # clear() empties the list but keeps the same list object alive.
+
+# Tuple
+
+# 1.
+# a = (1, 2, 3)
+# print(a[1])
+
+# 2         correct
+# Tuples are ordered, so index 1 always means the second element.
+
+# 2.
+# a = (1, 2, 3)
+# a[0] = 10
+
+# Error     correct
+# Tuples are immutable, so you cannot change what index points to.
+
+# 3.
+# a = (1,)
+# print(type(a))
+
+# <class 'tuple'>   correct
+# The comma creates the tuple, not the parentheses.
+
+# 4.
+# a = (1, 2, 3)
+# print(len(a))
+
+# 3         correct
+# len() counts how many elements the tuple holds.
+
+# 5.
+# a = (1, 2, 3)
+# b = a + (4, 5)
+# print(b)
+
+# (1, 2, 3, 4, 5)   correct
+# Tuples can’t change, so Python creates a new tuple when adding.
+
+# 6.
+# a = (1, 2, 3)
+# print(3 in a)
+
+# True      correct
+# in checks values, not positions.
+
+# 7.
+# a = (1, 2, 3)
+# b = a
+# print(a is b)
+
+# False    # Wrong
+# True      correct
+# b is not a copy; it points to the same tuple in memory.
+# = never copies objects — it copies references.
+
+# 8.
+# a = ()
+# print(bool(a))
+
+# False     correct
+# Empty containers are always False in Python.
+
+# 9.
+# a = ([], [])
+# a[0].append(1)
+# print(a)
+
+# (1, [], [])   # Wrong
+# ([1], [])     correct
+# The tuple is immutable, but the list inside it is mutable.
+# Tuple immutability protects the container, not the objects inside it.
+
+# 10.
+# a = (1, 2)
+# print(type(a) == tuple)
+
+# True          correct
+# type() compares exact object type.

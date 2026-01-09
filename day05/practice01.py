@@ -160,3 +160,139 @@
 
 # True          correct
 # type() compares exact object type.
+
+# DICTIONARY
+
+# 1.
+# a = {"name": "Om", "age": 24}
+# print(a["name"])
+
+# Om        Correct
+# Dict access uses keys, not positions — "name" directly maps to "Om"
+
+# 2.
+# a = {"x": 1}
+# print(a["y"])
+
+# Error     Correct
+# Accessing a missing key with [] raises a KeyError
+
+# 3.
+# a = {"x": 1}
+# a["x"] = 5
+# print(a)
+
+# x: 5      Wrong
+# {'x': 5}
+# Assigning an existing key REPLACES its value, it does not create a new key
+
+# 4.
+# a = {"x": 1}
+# a["y"] = 2
+# print(a)
+
+# {'x': 1, 'y': 2}      Correct
+# Assigning a new key adds a new key-value pair to the dictionary
+
+# 5.
+# a = {"x": 1, "y": 2}
+# print(len(a))
+
+# 2         Correct
+# len() on a dict counts KEYS, not values
+
+# 6.
+# a = {"x": 1}
+# print("x" in a)
+
+# 1         Wrong
+# True      Correct
+# in checks ONLY KEYS in a dictionary, never values
+
+# 7.
+# a = {"x": 1}
+# print(a.get("y"))
+
+# None      Correct
+# get() returns None instead of crashing when key is missing
+
+# 8.
+# a = {"x": 1}
+# print(a.get("y", 0))
+
+# 0         Correct
+# get(key, default) returns the default value when key doesn’t exist
+
+# 9.
+# a = {}
+# a["list"] = [1, 2]
+# a["list"].append(3)
+# print(a)
+
+# {'list': [1, 2, 3]}       Correct
+# Dict stores references, so modifying the list updates the value inside the dict
+
+# 10.
+# a = {"x": 1}
+# b = a
+# b["x"] = 10
+# print(a)
+
+# {"x": 1}      Wrong
+# {"x": 10}     Correct
+# Both a and b point to the SAME dictionary in memory
+
+
+# bool()
+
+# 1.
+# bool()
+# False
+# Empty call defaults to False (no value = falsey).
+
+# 2.
+# bool(0)
+# False
+# Zero means “nothing” in numeric truth.
+
+# 3.
+# bool(" ")
+# True
+# String exists and is not empty, space still counts as content.
+
+# 4.
+# bool([])
+# False
+# Empty container = falsey.
+
+# 5.
+# bool([0])
+# True
+# List is not empty, content doesn’t matter.
+
+# 6.
+# bool({})
+# False
+# Empty dictionary = falsey.
+
+# 7.
+# bool({"a": None})
+# True
+# Dictionary has a key, so it exists.
+
+# 8.
+# bool(None)
+# False
+# None literally means “nothing”.
+
+# 9.
+# bool(0.0)
+# False
+# Zero in any numeric form is falsey.
+
+# 10.
+# bool([[], []])
+# True
+# Outer list is not empty, inner emptiness is irrelevant.
+
+

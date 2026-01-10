@@ -296,3 +296,86 @@
 # Outer list is not empty, inner emptiness is irrelevant.
 
 
+# CONDITIONALS
+
+# 1.
+# if 1:
+    # print("A")
+
+# A
+# Any non-zero number is truthy, so 1 behaves like True.
+
+# 2.
+# if 0:
+#     print("A")
+# else:
+#     print("B")
+
+# B
+# 0 is falsy, so Python skips the if block and runs else.
+
+# 3.
+# if []:
+#     print("Yes")
+# else:
+#     print("No")
+
+# No
+# Empty containers are falsy, so the condition fails.
+
+# 4.
+# if " ":
+    # print("Run")
+
+# Run
+# A string with a space is still non-empty, so it’s truthy.
+
+# 5.
+# x = None
+# if x:
+    # print("True")
+# else:
+    # print("False")
+
+# False
+# None represents “nothing,” which Python treats as falsy.
+
+# 6.
+# if {}:
+    # print("Yes")
+# else:
+    # print("No")
+
+# No
+# An empty dictionary has no content, so it evaluates to False.
+
+# 7.
+# x = [1, 2]
+# if x:
+#     print("Not Empty")
+
+# Not Empty
+# A list with elements is non-empty, therefore truthy.
+
+# 8.
+# if False == 0:
+#     print("Equal")
+
+# Equal
+# In Python, False is internally equal to integer 0.
+
+# 9.
+# x = ""
+# if not x:
+#     print("Empty")
+
+# Empty
+# not flips falsy to truthy, and an empty string is falsy.
+
+# 10.
+# x = 10
+# if x > 5 and x < 20:
+#     print("In range")
+
+# In range
+# Both comparisons are true, so and allows the block to run.

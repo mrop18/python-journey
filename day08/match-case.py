@@ -1,5 +1,9 @@
 chassisNum = input("Enter chassis number : ")
 
+if(len(chassisNum < 17)):
+    print("Invalid chassis number")
+    exit()
+
 makerCode = chassisNum[:3].upper()
 
 # print(makerCode)

@@ -8,7 +8,7 @@ print(s[-3:])       # slicing returns a new list = [9, 16, 25]
 
 print(s + [36, 49, 64])     # supports concatenation [1, 4, 9, 18, 25, 36, 49, 64]
 
-# unlike utrings which are immutable, lists are a mutable type
+# unlike strings which are immutable, lists are a mutable type
 
 s[3] = 16                   # replace the value
 print(s)

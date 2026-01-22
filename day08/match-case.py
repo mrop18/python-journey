@@ -1,6 +1,6 @@
 chassisNum = input("Enter chassis number : ")
 
-if(len(chassisNum < 17)):
+if(len(chassisNum) < 17):
     print("Invalid chassis number")
     exit()
 
